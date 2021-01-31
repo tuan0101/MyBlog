@@ -1,0 +1,55 @@
+# Singleton
+Singleton ensures that a class has only one instance and provides a single point of access to it for any other code.
+
+For example, creating a connection to a database might cost time and resources. We want to make only one connection to the database, and we can use this connection instance for many tasks. The code below doesn't ensure there is only one instance of the Connection class.
+
+Java
+```java
+public class Main
+{
+	public static void main(String[] args) {
+		Connection con1 = new Connection();
+    Connection con2 = new Connection();
+    Connection con3 = new Connection();
+	}
+}
+```
+Instead, we want to do this:
+```
+public class Connection {
+    private static Connection _instance;
+    
+    public static Connection getInstance() {
+        if(_instance == null) {
+            _instance = new Connection();
+        }
+        return _instance;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Connection con1 = Connection.getInstance();
+    Connection con2 = Connection.getInstance();
+    Connection con3 = Connection.getInstance();
+	}
+}
+```
+However, if we use multiple thread in Java, it is possible to have multiple instances of the Connection class. To avoid this, we can switch the getInstance function to synchronized.
+```
+public synchronized static Connection getInstance()...
+```
+If if we don't want the whole function to be synchronized, we can synchronize a portion of the function.
+```
+    public static Connection getInstance() {
+        if(_instance == null) {
+            synchronized (Connection.class) {
+                if (instance == null) {
+                    instance = new Connection();
+                }
+            }
+        }
+        return _instance;
+    }
+```
