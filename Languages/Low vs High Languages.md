@@ -1,4 +1,6 @@
 # Low vs. High Language
+![alt text](https://cdn.educba.com/academy/wp-content/uploads/2015/11/21-738x281.png)
+
 **Machine Code** could probably a lowest level programming language that is as close as possible to what the CPU can understand.
  
 **Assembly languge** is at the level of telling the processor what to do.
