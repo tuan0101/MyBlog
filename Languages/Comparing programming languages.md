@@ -6,3 +6,6 @@ It is very low-level, allowing developers to access the memory on a computer dir
 
 C++ is technically a superset of C, that it provide some more useful features from Simula, adding object orientation, classes, virtual functionms. 
 C++ is widely used, especially in game development. it's extremely powerful, but also a very complex language
+
+C# was originally created by Microsoft as the flagship language of the .NET Runtime. 
+C# is very, very similar to Java. We can say C# is the combination of C++ and Java, but is much simpler and has many funtional features.
