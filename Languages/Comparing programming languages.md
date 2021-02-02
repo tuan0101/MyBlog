@@ -9,3 +9,6 @@ C++ is widely used, especially in game development. it's extremely powerful, but
 
 C# was originally created by Microsoft as the flagship language of the .NET Runtime. 
 C# is very, very similar to Java. We can say C# is the combination of C++ and Java, but is much simpler and has many funtional features.
+
+Java
+The idea when Java was created was that it could run on a virtual machine which could run on any computing platform, thus enabling Java programs to be easily cross-platform.
