@@ -33,7 +33,19 @@ const String MYNAME = "Tuan";
 | CopyTo()     | Copies all elements to newArr <br>starting at a certain index | Array.CopyTo(newArr, 3) |
 | CreateInstance() | Intializes a new instance of the Array class | Array.CreateInstance(typeof(String), length); |
 | Empty        | Returns an empty array | numArray.Empty(); |
-| ------------- | ------------- | ------- |
+| Equals()     | Determines whether the specified object<br>is equal to the current object | numArr.Equals(newArray); |
+| Exists()     | Determine if a element if it matches given condition | Array.Exist(numArr, 5); |
+| Find()       | Searchs for an element and returns the first<br>occurence within the array | Array.Find(numArr, n=>n>5 ); |
+| FindAll()    | Returns an array containing all elements that<br>match the condition | Array.FindAll(numArr, n=>n>5 ); |
+| FindIndex()  | Returns the index of the first occurrence | Array.FindIndex(numArr, n=>n>5 |
+| ForEach()    | Loops through each element of the array and <br>performs the specified action | Array.ForEach(numArr, Action); |
+| IndexOf()    | Searches for the specified object and<br>returns the index of its first occurence | numArr.IndexOf(5); |
+| Resize()     | Changes the original length of the array | Array.resize(ref arrVal, len-5); |
+| Reverse()    | Reverses the order of the elements in the array | numArr.Reverse(); |
+| ToString()   | Returns a string that represents the current object | numArr.ToString(); |
+| TrueForAll   | Checks whther every element matches the condition | Array.TrueForAll(numArr, n=>n>5); |
+
+
 
 
 ### String Data type conversion 
