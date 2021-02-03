@@ -18,6 +18,8 @@ The idea when Java was created was that it could run on a virtual machine which 
 
 **Python** is higher level, and remove a lot of details that you would need to specify in Java or C#
 
+**JavaScript** is high-level, given its flexibility (functions as objects), often just-in-time compiled, and multi-paradigm. 
+
 **SQL** is of highest languages. In SQL, you are programming the logic of querying or manipulating the data  stored in a database that can run anywhere.
 
 **IN CONCLUSION**
