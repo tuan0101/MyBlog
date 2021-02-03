@@ -20,6 +20,8 @@ The idea when Java was created was that it could run on a virtual machine which 
 
 **JavaScript** is high-level, given its flexibility (functions as objects), often just-in-time compiled, and multi-paradigm. 
 
+**Kotlin** is a high-level programming language design for JVM and Android that combine object-oriented and functional programming features.
+
 **SQL** is of highest languages. In SQL, you are programming the logic of querying or manipulating the data  stored in a database that can run anywhere.
 
 **IN CONCLUSION**
