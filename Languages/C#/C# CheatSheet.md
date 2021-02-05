@@ -64,3 +64,31 @@ public Tuple < int, string, string > GetEmployee()
     return Tuple.Create(employeeId, firstName, lastName);
 }
 ```
+
+
+### yield return
+When "yield" contextual keyword appears in a statement, you indicate that the method, operator, or get accessor in which it contains the statement is an iterator. 
+You use a *yield* return statement to return each element one at a time.
+
+```C#
+static void Main()
+{
+    // Display powers of 2 up to the exponent of 5:
+    foreach (int i in Power(2, 5))
+    {
+        Console.Write("{0} ", i);
+    }
+}
+
+public static IEnumerable<int> Power(int number, int exponent)
+{
+    int result = 1;
+
+    for (int i = 0; i < exponent; i++)
+    {
+        result = result * number;
+        yield return result;
+    }
+}
+ // Output: 2 4 8 16 32
+```
