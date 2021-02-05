@@ -45,12 +45,22 @@ const String MYNAME = "Tuan";
 | ToString()   | Returns a string that represents the current object | numArr.ToString(); |
 | TrueForAll   | Checks whther every element matches the condition | Array.TrueForAll(numArr, n=>n>5); |
 
-
-
-
 ### String Data type conversion 
 | Method      | Description | Example |
 | ------------- | ------------- |-------|
 | AsInt()<br>IsInt()  | Convert string into integer <br>Check if the string is int  | intVal = str.AsInt() <br>str.IsInt();
 | Other methods  | AsFloat(), IsFloat, AsDecimal(), IsDecimal(), <br> AsDateTime(), IsDateTime(), AsBool(), IsBool() | Same as above pattern;
 | ToString() | Convert another data type into String |myVal = 1111;<br> strVal = myVal.ToString();|
+
+### Tuples
+Uses a tuple to return multiple values from a method
+```C#
+public Tuple < int, string, string > GetEmployee()
+{
+    int employeeId = 1001;
+    string firstName = "Rudy";
+    string lastName = "Koertson";
+
+    return Tuple.Create(employeeId, firstName, lastName);
+}
+```
