@@ -92,3 +92,49 @@ public static IEnumerable<int> Power(int number, int exponent)
 }
  // Output: 2 4 8 16 32
 ```
+
+### Enum Flags Attribute
+Using flags attribute to decorate the enum in C# enables it as bit fields. This enables developers to collect the enum values.
+```C#
+public static void Main(string[] args)
+{
+   int snakes = 6;
+   Console.WriteLine((Reptile)snakes);
+}
+
+[Flags]
+enum Reptile{ 
+   BlackMamba = 2,
+
+   CottonMouth = 4,
+
+   Wiper = 8,
+
+   Crocodile = 16,
+
+   Aligator = 32
+}
+//output BlackMamba, CottonMouth
+```
+```C#
+public static void Main(string[] args)
+{
+   int snakes = 10;
+   Console.WriteLine((Reptile)snakes);
+}
+
+[Flags]
+enum Reptile{ 
+   BlackMamba = 2,
+
+   CottonMouth = 8,
+
+   Wiper = 10,
+
+   Crocodile = 16,
+
+   Aligator = 32
+}
+//output Wiper
+```
+If Wiper is not equal to 10, the output will be BlackMamba, CottonMouth
