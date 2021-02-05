@@ -138,3 +138,7 @@ enum Reptile{
 //output Wiper
 ```
 If Wiper is not equal to 10, the output will be BlackMamba, CottonMouth
+
+### Nullable Types
+Data types such as chat, double, bool, and int can't be set to null, so inserting the sumbol "?" makes it possible to assign null.
+```int? i = null;```
