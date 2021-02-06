@@ -9,3 +9,18 @@ int maxLength = words
   .Max(w => w.Length);
 Console.WriteLine(maxLength);   // output: 7
 ```
+
+example 2:
+```C#
+List<int> numbers = new List<int>() {12, 15, 0, 1, 2};
+
+var square = numbers.Select(x => x * x); 
+
+// foreach loop to display squares 
+Console.Write("Squares : ");
+foreach(var value in square) 
+{ 
+    Console.Write("{0} ", value); 
+} 
+//output: Squares : 144 225 0 1 4 
+```
