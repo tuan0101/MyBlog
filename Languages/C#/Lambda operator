@@ -1,0 +1,11 @@
+#Lambda operator
+The lambda operator ```=>``` separates the input parameters on the left side from the lambda body (usually an expression) on the right side.
+
+example 1:
+```C#
+string[] words = { "banana", "apple", "apricot" };
+int maxLength = words
+  .Where(w => w.StartsWith("a"))
+  .Max(w => w.Length);
+Console.WriteLine(maxLength);   // output: 7
+```
