@@ -24,3 +24,18 @@ foreach(var value in square)
 } 
 //output: Squares : 144 225 0 1 4 
 ```
+
+example 3:
+```C#
+List<int> numbers = new List<int>() {12, 15, 0, 1, 2};
+var divBy3 = numbers.FindAll(x => (x % 2) == 0); 
+
+// foreach loop to display squares 
+Console.Write("Numbers Divisible by 2 : ");
+foreach(var value in divBy2) 
+{ 
+    Console.Write("{0} ", value); 
+} 
+//Numbers Divisible by 2 : 12 0 2
+```
+
