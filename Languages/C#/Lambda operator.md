@@ -28,7 +28,7 @@ foreach(var value in square)
 example 3:
 ```C#
 List<int> numbers = new List<int>() {12, 15, 0, 1, 2};
-var divBy3 = numbers.FindAll(x => (x % 2) == 0); 
+var divBy2 = numbers.FindAll(x => (x % 2) == 0); 
 
 // foreach loop to display squares 
 Console.Write("Numbers Divisible by 2 : ");
@@ -37,5 +37,14 @@ foreach(var value in divBy2)
     Console.Write("{0} ", value); 
 } 
 //Numbers Divisible by 2 : 12 0 2
+```
+
+example 4:
+```C#
+Func<int, int> square = x => x * x;
+Console.WriteLine(square(7));   //output: 49
+
+Func<int, int, bool> testForEquality = (x, y) => x == y;
+Console.WriteLine(testForEquality(5, 3));   //output: False
 ```
 
