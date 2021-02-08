@@ -30,4 +30,4 @@ low level = long development time + very fast executable file
 
 high level = shorter development time + slower executable file
 
-But it's not always the case. A highe level programming language isn't necessarily slower than a low level programming language. For intance, **Scala** is higher level compared to **Java** but provbides many ways to work with multithreading and collections that perform better than it's java's equivalent. ------*StackOverflow*------
+But it's not always the case. A high level programming language isn't necessarily slower than a low level programming language. For intance, **Scala** is higher level compared to **Java** but provbides many ways to work with multithreading and collections that perform better than it's java's equivalent. ------*StackOverflow*------
