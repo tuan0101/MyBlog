@@ -17,10 +17,12 @@ As you can see, both dog and car are capable of running, but they belong to two 
 
 Syntax:
 
-Class Cat extends Animal{}  // Abstract Animal
-
-Class Cat implements Animal{} // interface Animal
-
+Class Cat extends Animal{}  // Abstract Animal  
+Class Cat implements Animal{} // interface Animal  
 
 Abstract classes should be used primarily for objects that are closely related, bc it "extend" what already have, whereas interfaces are best suited for providing a common functionality to unrelated classes.
 interface is just like a list of required action that programmers need to implement.
+
+Related topic:  
+What is "final method"?  
+the key word "final" to indicate that the method cannot be overridden by subclasses.
