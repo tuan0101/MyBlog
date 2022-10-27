@@ -16,8 +16,11 @@ As you can see, both dog and car are capable of running, but they belong to two 
 => Abstract functions are only used to rewrite in subclasses so why not use ordinary class? The reason is that the abstract function must be overide in the subclass, otherwise it will report an error. It acts an instruction to make sure the subclass contains adequate functions (This is the same for abstract function in an interface).
 
 Syntax:
+
 Class Cat extends Animal{}  // Abstract Animal
+
 Class Cat implements Animal{} // interface Animal
+
 
 Abstract classes should be used primarily for objects that are closely related, bc it "extend" what already have, whereas interfaces are best suited for providing a common functionality to unrelated classes.
 interface is just like a list of required action that programmers need to implement.
