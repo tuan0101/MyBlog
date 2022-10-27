@@ -25,4 +25,6 @@ interface is just like a list of required action that programmers need to implem
 
 Related topic:  
 What is "final method"?  
-the key word "final" to indicate that the method cannot be overridden by subclasses.
+the key word "final" to indicate that the method cannot be overridden by subclasses.  
+
+tip: add _._ 2 space at the end to break line in this github
