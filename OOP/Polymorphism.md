@@ -11,7 +11,7 @@ public class Dog extends Animal{
   public void communicate(){ // **overriding**
     System.out.println("gau gau");
   }
-  public void communicate(string s){ // exactly method name but different parameters: **overlapping**
+  public void communicate(string s){ // exactly method name but different parameters: **overloadingg**
     System.out.println("gau gau", + s);
   }
 }
