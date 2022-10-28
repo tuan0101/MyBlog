@@ -1,5 +1,6 @@
 
-```
+```C
+
 function test() {
   int n = 50;
   int *p = &n;
