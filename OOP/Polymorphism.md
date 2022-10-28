@@ -2,16 +2,16 @@ Whenever a child class overide a method from a parent class, we call it polymorp
 
 ```Java
 public class Animal{
-  public void speak-communicate(){
+  public void communicate(){
     System.out.println("communication");
   }
 }
 
 public class Dog extends Animal{
-  public void speak-communicate(){ // **overriding**
+  public void communicate(){ // **overriding**
     System.out.println("gau gau");
   }
-  public void speak-communicate(string s){ // exactly method name but different parameters: **overlapping**
+  public void communicate(string s){ // exactly method name but different parameters: **overlapping**
     System.out.println("gau gau", + s);
   }
 }
