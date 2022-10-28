@@ -23,5 +23,5 @@ public class Cat extends Animal{
 }
 ```
 2 types of polimorphism
-**static** type is achieved through the method **overloadingg**
+**static** type is achieved through the method **overloadingg**  
 **dynamic** type is achieved through the method **overriding**
